@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good First Issues Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        .summary {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .summary-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        .summary-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .summary-card .label {
+            color: #666;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .issue-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .issue-link:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .assignee {
+            color: #666;
+        }
+        .days-inactive {
+            font-weight: bold;
+        }
+        .days-inactive.warning {
+            color: #FFA500;
+        }
+        .days-inactive.danger {
+            color: #DC143C;
+        }
+        .reason {
+            font-size: 13px;
+            color: #666;
+            max-width: 300px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+        .column-tag {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Good First Issues Report</h1>
+        <p>OpenVINO Project Board Analysis - 2025-12-23 13:36 UTC</p>
+    </div>
+
+    <div class="summary">
+        <div class="summary-card">
+            <div class="number">20</div>
+            <div class="label">Total Issues</div>
+        </div>
+        <div class="summary-card">
+            <div class="number" style="color: #FFA500;">7</div>
+            <div class="label">To Unassign</div>
+        </div>
+        <div class="summary-card">
+            <div class="number" style="color: #32CD32;">3</div>
+            <div class="label">In Review</div>
+        </div>
+        <div class="summary-card">
+            <div class="number" style="color: #DC143C;">1</div>
+            <div class="label">To Close</div>
+        </div>
+        <div class="summary-card">
+            <div class="number" style="color: #808080;">9</div>
+            <div class="label">No Change</div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Issue</th>
+                <th>Assignee</th>
+                <th>Days Inactive</th>
+                <th>Current Column</th>
+                <th>Recommended Action</th>
+                <th>Reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/28689" class="issue-link" target="_blank">#28689</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::__contains__, aten::nan...</span>
+                </td>
+                <td class="assignee">Unassigned</td>
+                <td class="days-inactive ">7 days</td>
+                <td><span class="column-tag">Contributors Needed</span></td>
+                <td><span class="badge" style="background-color: #DC143C;">Close</span></td>
+                <td class="reason">The issue has been inactive for 9 months and will be closed in a week according to the last comment.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29683" class="issue-link" target="_blank">#29683</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::_fake_quantize_learnabl...</span>
+                </td>
+                <td class="assignee">Yash-Vijay29</td>
+                <td class="days-inactive ">7 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been assigned but there has been no activity from the assignee for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/28707" class="issue-link" target="_blank">#28707</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::Delete aten::str aten::...</span>
+                </td>
+                <td class="assignee">Unassigned</td>
+                <td class="days-inactive ">7 days</td>
+                <td><span class="column-tag">Contributors Needed</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been unassigned and there has been no activity for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/23746" class="issue-link" target="_blank">#23746</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::rrelu and aten::rrelu_ ...</span>
+                </td>
+                <td class="assignee">Vishwa2684</td>
+                <td class="days-inactive ">6 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been assigned but there has been no activity from the assignee for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29701" class="issue-link" target="_blank">#29701</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::items</span>
+                </td>
+                <td class="assignee">ayushgoyal9715</td>
+                <td class="days-inactive ">5 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been assigned but there has been no activity from the assignee for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29651" class="issue-link" target="_blank">#29651</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: support aten::tensordot</span>
+                </td>
+                <td class="assignee">Yash-Vijay29</td>
+                <td class="days-inactive ">1 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been assigned but there has been no activity for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29730" class="issue-link" target="_blank">#29730</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support quantized::conv1d_relu</span>
+                </td>
+                <td class="assignee">toxicteddy00077</td>
+                <td class="days-inactive ">1 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been assigned but there has been no activity from the assignee for more than 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/23611" class="issue-link" target="_blank">#23611</a><br>
+                    <span style="font-size: 13px;">[Good First Issue][Python API]: Create constant for strin...</span>
+                </td>
+                <td class="assignee">dibyajyoti-mandal</td>
+                <td class="days-inactive ">0 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #FFA500;">Unassign</span></td>
+                <td class="reason">The issue has been unassigned and there has been no activity for over 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29343" class="issue-link" target="_blank">#29343</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support quantized::conv1d, quantized:...</span>
+                </td>
+                <td class="assignee">VaishnaviOnPC</td>
+                <td class="days-inactive ">5 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #32CD32;">In Review</span></td>
+                <td class="reason">There is an open pull request that is ready for review.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/30212" class="issue-link" target="_blank">#30212</a><br>
+                    <span style="font-size: 13px;">[Good First Issue][Keras 3 OpenVINO Backend]: Support num...</span>
+                </td>
+                <td class="assignee">vaidik-gupta</td>
+                <td class="days-inactive ">4 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #32CD32;">In Review</span></td>
+                <td class="reason">There is an open PR (#21405) extending backend support for numpy.prod operation.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29647" class="issue-link" target="_blank">#29647</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::cross_entropy_loss</span>
+                </td>
+                <td class="assignee">ayushgoyal9715</td>
+                <td class="days-inactive ">2 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #32CD32;">In Review</span></td>
+                <td class="reason">There is an open pull request that is ready for review.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/20534" class="issue-link" target="_blank">#20534</a><br>
+                    <span style="font-size: 13px;">[Good First Issue][TF FE]: Support Case operation for Ten...</span>
+                </td>
+                <td class="assignee">ChrisAB</td>
+                <td class="days-inactive ">7 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recently assigned and there is recent maintainer activity.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29720" class="issue-link" target="_blank">#29720</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support prim::CallMethod</span>
+                </td>
+                <td class="assignee">hanzalahwaheed</td>
+                <td class="days-inactive ">5 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">The issue has been recently interacted with by the maintainer within the last 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/23248" class="issue-link" target="_blank">#23248</a><br>
+                    <span style="font-size: 13px;">[Good First Issue][TF FE]: Support MatrixDiagV3 operation...</span>
+                </td>
+                <td class="assignee">vaidik-gupta</td>
+                <td class="days-inactive ">4 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recently assigned and no activity from the maintainer yet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/30911" class="issue-link" target="_blank">#30911</a><br>
+                    <span style="font-size: 13px;">[Feature Request]: Support for PP-OCRv5's New Model Forma...</span>
+                </td>
+                <td class="assignee">tiger100256-hu</td>
+                <td class="days-inactive ">2 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recent maintainer activity indicates they are still interested in the issue, but no contributor has taken action yet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29718" class="issue-link" target="_blank">#29718</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support aten::values</span>
+                </td>
+                <td class="assignee">dipak0000812</td>
+                <td class="days-inactive ">1 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recently assigned and no activity from the maintainer within the last 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29723" class="issue-link" target="_blank">#29723</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support prim::isinstance</span>
+                </td>
+                <td class="assignee">Unassigned</td>
+                <td class="days-inactive ">0 days</td>
+                <td><span class="column-tag">Contributors Needed</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recent maintainer interaction with @shrutikadesai2211, but no recent activity from the contributor.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/33116" class="issue-link" target="_blank">#33116</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Improve logging for OpenVINO torch.co...</span>
+                </td>
+                <td class="assignee">aadya940</td>
+                <td class="days-inactive ">0 days</td>
+                <td><span class="column-tag">Assigned</span></td>
+                <td><span class="badge" style="background-color: #4169E1;">Waiting</span></td>
+                <td class="reason">Recently assigned and maintainer has interacted with the contributor within 7 days.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/26575" class="issue-link" target="_blank">#26575</a><br>
+                    <span style="font-size: 13px;">[Good First Issue][JAX FE]: Support jax.lax.gather operat...</span>
+                </td>
+                <td class="assignee">Unassigned</td>
+                <td class="days-inactive ">7 days</td>
+                <td><span class="column-tag">Contributors Needed</span></td>
+                <td><span class="badge" style="background-color: #808080;">No Change</span></td>
+                <td class="reason">The issue is in 'Contributors Needed' and has no recent activity, but it's not abandoned as it was recently checked by a maintainer.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/openvinotoolkit/openvino/issues/29731" class="issue-link" target="_blank">#29731</a><br>
+                    <span style="font-size: 13px;">[Good First Issue]: Support quantized::conv2d_prepack</span>
+                </td>
+                <td class="assignee">Unassigned</td>
+                <td class="days-inactive ">4 days</td>
+                <td><span class="column-tag">Contributors Needed</span></td>
+                <td><span class="badge" style="background-color: #808080;">No Change</span></td>
+                <td class="reason">The issue is unassigned and in 'Contributors Needed' state with recent interaction.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Generated by Good First Issues Manager | 2025-12-23 13:36 UTC</p>
+        <p>This is an automated report. Please review recommendations before taking action.</p>
+    </div>
+</body>
+</html>
